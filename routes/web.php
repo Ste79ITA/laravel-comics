@@ -128,3 +128,11 @@ Route::get('/', function () {
 
     return view('index', compact('comics'));
 })->name('home');
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+Route::get('/comics', function () {
+    return view('comics');
+})->name('comics');
