@@ -1,0 +1,22 @@
+.page-header {
+    border: 2px solid green;
+
+    ul,
+    il,
+    menu {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 13px;
+    }
+    .logo img {
+        width: 60px;
+    }
+    .menu {
+        margin-bottom: 0;
+    }
+}

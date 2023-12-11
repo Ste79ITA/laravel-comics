@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('index');
+})->name('home');
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+Route::get('/comics', function () {
 
     $comics = [
         [
@@ -126,13 +134,5 @@ Route::get('/', function () {
         ]
     ];
 
-    return view('index', compact('comics'));
-})->name('home');
-
-Route::get('/characters', function () {
-    return view('characters');
-})->name('characters');
-
-Route::get('/comics', function () {
-    return view('comics');
+    return view('comics', compact('comics'));
 })->name('comics');
