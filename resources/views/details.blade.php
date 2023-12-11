@@ -12,8 +12,11 @@
                     {{$_GET['title']}}
                 </h1>
                 <div class="store d-flex ">
-                    <div class="d-flex">
-                        <p>U.S. Price: {{$_GET['price']}}</p>
+                    <div class="price d-flex">
+                        <div>
+
+                            <p>U.S. Price: {{$_GET['price']}}</p>
+                        </div>
                         <div>
                             Available
                         </div>

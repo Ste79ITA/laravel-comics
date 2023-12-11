@@ -18,6 +18,11 @@
 
         .store {
             background-color: green;
+            color: white;
+            justify-content: space-between;
+            .price {
+                justify-content: space-between;
+            }
         }
     }
     .adv-img {

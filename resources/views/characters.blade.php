@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="py-5">
+    <section class="main py-5">
         <div class="container">
             <h1>
                 pagina Characters
