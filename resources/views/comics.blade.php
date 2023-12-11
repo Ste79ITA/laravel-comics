@@ -7,10 +7,12 @@
             <div class="comic-row row d-flex">
                 @foreach ($comics as $comic)
                 <div class="col-2 p-3">
-                    <div class="img-container">
-                        <img src="{{ $comic['thumb'] }}" alt="">
-                    </div>
-                    <p class="comic-title pt-2">{{ $comic['title'] }}</p>
+                    <a href="{{ route('details', $comic) }}">
+                        <div class="img-container">
+                            <img src="{{ $comic['thumb'] }}" alt="">
+                        </div>
+                        <p class="comic-title pt-2">{{ $comic['title'] }}</p>
+                    </a>
                 </div>
                 @endforeach
             </div>

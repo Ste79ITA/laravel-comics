@@ -136,3 +136,7 @@ Route::get('/comics', function () {
 
     return view('comics', compact('comics'));
 })->name('comics');
+
+Route::get('/details', function () {
+    return view('details');
+})->name('details');
